@@ -10,4 +10,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - run: echo "Test"
+      - uses: docker/build-push-action@v6
+        with:
+          push: false
+          tags: fastapi-example
