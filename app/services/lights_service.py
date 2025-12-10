@@ -12,7 +12,7 @@ class LightsService:
         if not light["is_on"]:
             light["brightness"] = 0
         elif light["brightness"] == 0:
-            light["brightness"] = 40
+            light["brightness"] = 50
         
         self.repository.update(light_id, light)
         return light
